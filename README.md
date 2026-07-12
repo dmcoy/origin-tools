@@ -3,6 +3,9 @@ A blender add-on for creating and editing spline-based paths
 
 :construction: This Blender add-on is currently under development :construction:
 
+## Installation
+Download the .zip file from release and install from disk in Blender under **Preferences** --> **Add-ons**
+
 ## Features
 
 ### Implemented
