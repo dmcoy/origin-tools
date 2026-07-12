@@ -26,6 +26,8 @@ class VIEW3D_PT_origin_doctor_panel(bpy.types.Panel):
         layout.operator("object.set_origin_to_3d_cursor")
         layout.operator("object.set_origin_to_mass_surface")
         layout.operator("object.set_origin_to_mass_volume")
+        layout.operator("object.set_origin_to_selection")
+
 
 classes = [VIEW3D_PT_origin_doctor_panel]
 

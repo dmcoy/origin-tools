@@ -7,6 +7,11 @@ class OBJECT_OT_rot_x_axis(bpy.types.Operator):
     bl_label = "X"
     bl_description = "Changes orientation of the X axis"
     bl_options = {"REGISTER", "UNDO"}
+
+    @classmethod
+    def poll(cls, context):
+        obj = context.active_object
+        return (obj and context.selected_objects)
     
     def execute(self, context):
         arp = context.scene.axis_reorientation_properties
@@ -19,6 +24,11 @@ class OBJECT_OT_rot_y_axis(bpy.types.Operator):
     bl_label = "Y"
     bl_description = "Changes orientation of the Y axis"
     bl_options = {"REGISTER", "UNDO"}
+
+    @classmethod
+    def poll(cls, context):
+        obj = context.active_object
+        return (obj and context.selected_objects)
     
     def execute(self, context):
         arp = context.scene.axis_reorientation_properties
@@ -31,6 +41,11 @@ class OBJECT_OT_rot_z_axis(bpy.types.Operator):
     bl_label = "Z"
     bl_description = "Changes orientation of the Z axis"
     bl_options = {"REGISTER", "UNDO"}
+
+    @classmethod
+    def poll(cls, context):
+        obj = context.active_object
+        return (obj and context.selected_objects)
     
     def execute(self, context):
         arp = context.scene.axis_reorientation_properties
