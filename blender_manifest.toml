@@ -2,7 +2,7 @@ schema_version = "1.0.0"
 
 # Example of manifest file for a Blender extension
 # Change the values according to your extension
-id = "path-forge"
+id = "path_forge"
 version = "1.0.0"
 name = "Path Forge"
 tagline = "Tools for creating and editing spline-based paths"
