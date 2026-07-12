@@ -3,7 +3,7 @@ schema_version = "1.0.0"
 # Example of manifest file for a Blender extension
 # Change the values according to your extension
 id = "path_forge"
-version = "1.0.0"
+version = "0.1.0"
 name = "Path Forge"
 tagline = "Tools for creating and editing spline-based paths"
 maintainer = "dmcoy"
@@ -11,7 +11,7 @@ maintainer = "dmcoy"
 type = "add-on"
 
 # # Optional: link to documentation, support, source files, etc
-# website = "https://extensions.blender.org/add-ons/my-example-package/"
+website = "https://github.com/dmcoy/path-forge"
 
 # # Optional: tag list defined by Blender and server, see:
 # # https://docs.blender.org/manual/en/dev/advanced/extensions/tags.html
