@@ -1,7 +1,7 @@
 import bpy
 
 class axis_reorientation_properties(bpy.types.PropertyGroup):
-    rotation_angle: bpy.props.FloatProperty(default=180.0, name="Rotation Angle", min=0.0, max=360.0, step=100.0, description="Angle in degrees")
+    rotation_angle: bpy.props.FloatProperty(default=90.0, name="Rotation Angle", min=0.0, max=360.0, step=100.0, description="Angle in degrees")
 
 def register():
     bpy.utils.register_class(axis_reorientation_properties)

@@ -2,16 +2,16 @@ schema_version = "1.0.0"
 
 # Example of manifest file for a Blender extension
 # Change the values according to your extension
-id = "origin_doctor"
-version = "0.2.0"
-name = "Origin Doctor"
+id = "origin_tools"
+version = "0.3.0"
+name = "Origin Tools"
 tagline = "Tools for manipulating object origins"
 maintainer = "dmcoy"
 # Supported types: "add-on", "theme"
 type = "add-on"
 
 # # Optional: link to documentation, support, source files, etc
-website = "https://github.com/dmcoy/origin-doctor"
+website = "https://github.com/dmcoy/origin-tools"
 
 # # Optional: tag list defined by Blender and server, see:
 # # https://docs.blender.org/manual/en/dev/advanced/extensions/tags.html

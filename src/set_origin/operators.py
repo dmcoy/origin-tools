@@ -3,8 +3,8 @@ import bpy
 # Set origin to geometry
 class OBJECT_OT_set_origin_to_geometry(bpy.types.Operator):
     bl_idname = "object.set_origin_to_geometry"
-    bl_label = "Set origin to geometry"
-    bl_description = "Sets each selected object's origin to its geometry with one click"
+    bl_label = "Origin to geometry"
+    bl_description = "Sets each selected object's origin to its geometry"
     bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
@@ -20,8 +20,8 @@ class OBJECT_OT_set_origin_to_geometry(bpy.types.Operator):
 # Set geometry to origin
 class OBJECT_OT_set_geometry_to_origin(bpy.types.Operator):
     bl_idname = "object.set_geometry_to_origin"
-    bl_label = "Set geometry to origin"
-    bl_description = "Sets each selected object's geometry to the origin with one click"
+    bl_label = "Geometry to origin"
+    bl_description = "Sets each selected object's geometry to the origin"
     bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
@@ -37,8 +37,8 @@ class OBJECT_OT_set_geometry_to_origin(bpy.types.Operator):
 # Set origin to 3D cursor
 class OBJECT_OT_set_origin_to_3d_cursor(bpy.types.Operator):
     bl_idname = "object.set_origin_to_3d_cursor"
-    bl_label = "Set origin to 3D cursor"
-    bl_description = "Sets each selected object's origin to the 3D cursor with one click"
+    bl_label = "Origin to 3D cursor"
+    bl_description = "Sets each selected object's origin to the 3D cursor"
     bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
@@ -54,8 +54,8 @@ class OBJECT_OT_set_origin_to_3d_cursor(bpy.types.Operator):
 # Set origin to mass (surface)
 class OBJECT_OT_set_origin_to_mass_surface(bpy.types.Operator):
     bl_idname = "object.set_origin_to_mass_surface"
-    bl_label = "Set origin to mass (surface)"
-    bl_description = "Sets each selected object's origin to mass (surface) with one click"
+    bl_label = "Origin to mass (surface)"
+    bl_description = "Sets each selected object's origin to mass (surface)"
     bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
@@ -71,8 +71,8 @@ class OBJECT_OT_set_origin_to_mass_surface(bpy.types.Operator):
 # Set origin to mass (volume)
 class OBJECT_OT_set_origin_to_mass_volume(bpy.types.Operator):
     bl_idname = "object.set_origin_to_mass_volume"
-    bl_label = "Set origin to mass (volume)"
-    bl_description = "Sets each selected object's origin to mass (volume) with one click"
+    bl_label = "Origin to mass (volume)"
+    bl_description = "Sets each selected object's origin to mass (volume)"
     bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
