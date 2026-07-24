@@ -18,3 +18,6 @@ This changes the orientation of the origin while preserving the object's positio
 **Set Origin**
 
 These buttons are shortcuts to the set origin options. These will work for all selected objects.
+
+**Align Origin**
+Realigns the objects origin to the orientation and rotation of the objects mesh. This is an experimental feature and may not work effectively depending on mesh's geometry.
