@@ -12,7 +12,7 @@ class VIEW3D_PT_origin_tools_panel(bpy.types.Panel):
         layout = self.layout
 
         # Axis Reorientation
-        layout.label(text="Orientation:")#, icon="EMPTY_AXIS")
+        layout.label(text="Orientation:")
         layout.prop(axis_reorientation_properties, "rotation_angle", text="Rotation Angle")
 
         # Axis Reorientation labels
@@ -40,7 +40,7 @@ class VIEW3D_PT_origin_tools_panel(bpy.types.Panel):
         column.operator("object.rot_z_axis_neg")
 
         # Set origin operators
-        layout.label(text="Set Origin:")#, icon="OBJECT_ORIGIN")
+        layout.label(text="Set:")
         column = layout.column(align=True)
         column.operator("object.set_origin_to_geometry")
         column.operator("object.set_geometry_to_origin")
@@ -48,6 +48,11 @@ class VIEW3D_PT_origin_tools_panel(bpy.types.Panel):
         column.operator("object.set_origin_to_mass_surface")
         column.operator("object.set_origin_to_mass_volume")
         layout.operator("object.set_origin_to_selection")
+
+        # Origin Align
+        layout.label(text="Align:")
+        # layout.operator('object.align_object_to_origin')
+        layout.operator('object.align_origin_to_object')
 
 
 classes = [VIEW3D_PT_origin_tools_panel]
