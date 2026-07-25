@@ -1,16 +1,16 @@
-"""Orientation module."""
+"""Orientation module for manipulating object origins."""
 
 from . import operators
 from . import properties
 
 
 def register():
-    """Register all axis orientation operators and properties."""
+    """Register all orientation operators and properties."""
     operators.register()
     properties.register()
 
 
 def unregister():
-    """Unregister all axis orientation operators and properties."""
+    """Unregister all orientation operators and properties."""
     properties.unregister()
     operators.unregister()

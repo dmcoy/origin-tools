@@ -1,4 +1,4 @@
-"""Properties for orientation settings."""
+"""Properties for orientation module settings."""
 
 import bpy
 

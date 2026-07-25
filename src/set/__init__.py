@@ -1,13 +1,13 @@
-"""Set origin module."""
+"""Set origin module for Blender objects."""
 
 from . import operators
 
 
 def register():
-    """Register all set origin operators."""
+    """Register all set operators."""
     operators.register()
 
 
 def unregister():
-    """Unregister all set origin operators."""
+    """Unregister all set operators."""
     operators.unregister()
