@@ -2,14 +2,14 @@
 
 A powerful Blender add-on for efficiently manipulating object origins, aligning mesh geometry, and correcting coordinate axis orientation.
 
-![Origin Tools Panel](readme_images/origin-tools-panel.png)
+![Origin Tools Panel](images/origin-tools-panel.png){width="400"}
 
 ## About This Add-on
 
 Origin Tools streamlines common origin-related tasks in Blender, making it easier to:
 - Set object origins to specific locations (geometry, cursor, 3D cursor, center of mass)
 - Reorient local axes without affecting world position
-- Automatically align mesh geometry to correct axis orientation using RANSAC algorithm
+- Automatically align mesh geometry to correct axis orientation using RANSAC algorithm (experimental - currently supports Origin to Object, Object to Origin is planned)
 
 Perfect for artists and modelers who frequently work with imported or procedurally generated meshes that may have incorrect origin placement or axis orientation.
 
@@ -107,9 +107,6 @@ Automatically align mesh geometry with its dominant axis orientation using advan
 
 > [!WARNING]
 > This is an experimental feature and may not work effectively depending on the mesh's geometry. Results may vary based on mesh complexity, symmetry, and structure.
-
-#### Object to Origin
-Aligns the mesh geometry so it's centered around its current origin position. Useful when you have an object properly positioned but its geometry needs centering relative to that pivot point.
 
 #### Origin to Object
 Reorients the object's origin and local axes to match the dominant orientation of the mesh geometry. This is particularly useful for:
