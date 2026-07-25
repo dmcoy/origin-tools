@@ -1,5 +1,6 @@
 import bpy
 
+
 class VIEW3D_PT_origin_tools_panel(bpy.types.Panel):
     bl_idname = "VIEW3D_PT_origin_tools_panel"
     bl_label = "Origin"
@@ -55,7 +56,10 @@ class VIEW3D_PT_origin_tools_panel(bpy.types.Panel):
         layout.operator('object.align_origin_to_object')
 
 
-classes = [VIEW3D_PT_origin_tools_panel]
+classes = [
+    VIEW3D_PT_origin_tools_panel,
+]
+
 
 def register():
     for cls in classes:

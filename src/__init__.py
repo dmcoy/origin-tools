@@ -1,9 +1,12 @@
-# Origin Tools
-# Blender add-on for manipulating object origins
-# Copyright (C) dmcoy
-# Licensed under the GNU General Public License v3.0
+"""Origin Tools
+
+Blender add-on for manipulating object origins
+Copyright (C) 2026 dmcoy
+Licensed under the GNU General Public License v3.0
+"""
 
 from . import axis_reorientation, repair, set_origin, ui
+
 
 def register():
     axis_reorientation.register()
