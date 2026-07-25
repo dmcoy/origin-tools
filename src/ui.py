@@ -1,5 +1,6 @@
 import bpy
 
+
 class VIEW3D_PT_origin_tools_panel(bpy.types.Panel):
     bl_idname = "VIEW3D_PT_origin_tools_panel"
     bl_label = "Origin"
@@ -8,14 +9,12 @@ class VIEW3D_PT_origin_tools_panel(bpy.types.Panel):
     bl_category = "Item"
     
     def draw(self, context):
-        axis_reorientation_properties = context.scene.axis_reorientation_properties
+        orientation_properties = context.scene.orientation_properties
         layout = self.layout
 
-        # Axis Reorientation
+        # Orientation
         layout.label(text="Orientation:")
-        layout.prop(axis_reorientation_properties, "rotation_angle", text="Rotation Angle")
-
-        # Axis Reorientation labels
+        layout.prop(orientation_properties, "rotation_angle", text="Rotation Angle")
         row = layout.row()
         sub = row.row()
         sub.alignment = "CENTER"
@@ -26,8 +25,6 @@ class VIEW3D_PT_origin_tools_panel(bpy.types.Panel):
         sub = row.row()
         sub.alignment = "CENTER"
         sub.label(text="Z")
-
-        # Axis Reorientation operators
         row = layout.row()
         column = row.column(align=True)
         column.operator("object.rot_x_axis_pos")
@@ -39,7 +36,7 @@ class VIEW3D_PT_origin_tools_panel(bpy.types.Panel):
         column.operator("object.rot_z_axis_pos")
         column.operator("object.rot_z_axis_neg")
 
-        # Set origin operators
+        # Set
         layout.label(text="Set:")
         column = layout.column(align=True)
         column.operator("object.set_origin_to_geometry")
@@ -49,13 +46,16 @@ class VIEW3D_PT_origin_tools_panel(bpy.types.Panel):
         column.operator("object.set_origin_to_mass_volume")
         layout.operator("object.set_origin_to_selection")
 
-        # Origin Align
+        # Align
         layout.label(text="Align:")
         # layout.operator('object.align_object_to_origin')
         layout.operator('object.align_origin_to_object')
 
 
-classes = [VIEW3D_PT_origin_tools_panel]
+classes = [
+    VIEW3D_PT_origin_tools_panel,
+]
+
 
 def register():
     for cls in classes:
