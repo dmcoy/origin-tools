@@ -5,20 +5,20 @@ Copyright (C) 2026 dmcoy
 Licensed under the GNU General Public License v3.0
 """
 
-from . import axis_reorientation, repair, set_origin, ui
+from . import orientation, align, set, ui
 
 
 def register():
-    axis_reorientation.register()
-    repair.register()
-    set_origin.register()
+    orientation.register()
+    align.register()
+    set.register()
     ui.register()
 
 def unregister():
     ui.unregister()
-    set_origin.unregister()
-    repair.unregister()
-    axis_reorientation.unregister()
+    set.unregister()
+    align.unregister()
+    orientation.unregister()
 
 if __name__ == "__main__":
     register()

@@ -60,12 +60,12 @@ classes = [
 
 
 def register():
-    """Register all repair operators."""
+    """Register all align operators."""
     for cls in classes:
         bpy.utils.register_class(cls)
 
 
 def unregister():
-    """Unregister all repair operators."""
+    """Unregister all align operators."""
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)

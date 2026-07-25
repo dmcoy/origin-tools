@@ -1,4 +1,4 @@
-"""Axis Reorientation module
+"""Orientation module
 
 Provides operators to rotate object local axes around X, Y, Z axes
 """
@@ -20,7 +20,7 @@ class OBJECT_OT_rot_x_axis_pos(bpy.types.Operator):
         return bool(obj and context.selected_objects)
 
     def execute(self, context):
-        arp = context.scene.axis_reorientation_properties
+        arp = context.scene.orientation_properties
         utils.reorient_local_axes(context, arp.rotation_angle, "X")
         return {"FINISHED"}
 
@@ -38,7 +38,7 @@ class OBJECT_OT_rot_x_axis_neg(bpy.types.Operator):
         return bool(obj and context.selected_objects)
 
     def execute(self, context):
-        arp = context.scene.axis_reorientation_properties
+        arp = context.scene.orientation_properties
         utils.reorient_local_axes(context, -arp.rotation_angle, "X")
         return {"FINISHED"}
 
@@ -56,7 +56,7 @@ class OBJECT_OT_rot_y_axis_pos(bpy.types.Operator):
         return bool(obj and context.selected_objects)
 
     def execute(self, context):
-        arp = context.scene.axis_reorientation_properties
+        arp = context.scene.orientation_properties
         utils.reorient_local_axes(context, arp.rotation_angle, "Y")
         return {"FINISHED"}
 
@@ -74,7 +74,7 @@ class OBJECT_OT_rot_y_axis_neg(bpy.types.Operator):
         return bool(obj and context.selected_objects)
 
     def execute(self, context):
-        arp = context.scene.axis_reorientation_properties
+        arp = context.scene.orientation_properties
         utils.reorient_local_axes(context, -arp.rotation_angle, "Y")
         return {"FINISHED"}
 
@@ -92,7 +92,7 @@ class OBJECT_OT_rot_z_axis_pos(bpy.types.Operator):
         return bool(obj and context.selected_objects)
 
     def execute(self, context):
-        arp = context.scene.axis_reorientation_properties
+        arp = context.scene.orientation_properties
         utils.reorient_local_axes(context, arp.rotation_angle, "Z")
         return {"FINISHED"}
 
@@ -110,7 +110,7 @@ class OBJECT_OT_rot_z_axis_neg(bpy.types.Operator):
         return bool(obj and context.selected_objects)
 
     def execute(self, context):
-        arp = context.scene.axis_reorientation_properties
+        arp = context.scene.orientation_properties
         utils.reorient_local_axes(context, -arp.rotation_angle, "Z")
         return {"FINISHED"}
 
