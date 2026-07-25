@@ -68,27 +68,34 @@ Rotate the local coordinate system of selected objects while preserving their wo
 
 ### Set Origin Options
 
-Quickly set the origin of selected objects to various reference points. Each operation applies to all currently selected objects.
+Quick access to Blender's built-in set origin commands via single-click operations.
 
 ![Set Origin](gifs/set_origin.gif)
 
-#### Origin to Geometry
-Sets each object's origin to the geometric center (median) of its mesh data. Ideal for imported models with irregular geometry distribution.
+These operators provide convenient shortcuts for the first five functions:
 
-#### Geometry to Origin
-Moves all mesh geometry so it radiates from the current origin position. Useful when you've manually placed an origin point and want everything relative to it.
+#### Origin to Geometry
+Shortcut to **Object > Set Origin > Origin to Geometry**. Sets each object's origin to the geometric center (median) of its mesh data. Useful when importing models with irregular geometry distribution.
+
+#### Geometry to Origin  
+Shortcut to **Object > Set Origin > Geometry to Origin**. Moves all mesh geometry so it radiates from the current origin position. Helpful when you've manually placed an origin point and want everything relative to it.
 
 #### Origin to 3D Cursor
-Sets the origin to the exact location of your 3D cursor. Perfect for placing origins at specific reference points or pivot locations.
+Shortcut to **Object > Set Origin > Origin to 3D Cursor**. Sets the origin to the exact location of your 3D cursor. Perfect for placing origins at specific reference points or pivot locations.
 
 #### Origin to Mass (Surface)
-Calculates the center of mass based only on surface area (2D approximation). Faster than volume calculation, suitable for thin objects and sheets.
+Shortcut to **Object > Set Origin > Origin to Center of Mass + Volume (Surface)**. Calculates the center of mass based only on surface area (2D approximation). Faster than volume calculation, suitable for thin objects and sheets.
 
-#### Origin to Mass (Volume)
-Computes the true center of mass by analyzing the entire mesh volume. Most accurate for 3D objects but requires more computation time.
+#### Origin to Mass (Volume)  
+Shortcut to **Object > Set Origin > Origin to Center of Mass + Volume (Volume)**. Computes the true center of mass by analyzing the entire mesh volume. Most accurate for 3D objects but requires more computation time.
 
-#### Set Origin to Selection *(Edit Mode Only)*
-Sets the origin based on selected vertices in edit mode. Requires being in Edit Mode and selecting specific vertices. The 3D cursor is automatically reset to world origin after execution.
+These operations apply to all currently selected objects with a single click, providing quick access without navigating Blender's menu system.
+
+---
+
+### Origin to Selection *(Custom Behavior)*
+
+**Edit Mode Only**. This operator provides custom functionality that differs from Blender's default behavior. Unlike the other set origin operators, this sets the origin based on selected vertices in edit mode and automatically resets the 3D cursor to world origin after execution.
 
 ![Set Origin to Selection](gifs/set_origin_to_selection.gif)
 
