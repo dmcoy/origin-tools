@@ -2,7 +2,7 @@
 
 A powerful Blender add-on for efficiently manipulating object origins, aligning mesh geometry, and correcting coordinate axis orientation.
 
-![Origin Tools Panel](images/origin-tools-panel.png){width="400"}
+<img width="300" alt="image" src="/images/origin-tools-panel.png" />
 
 ## About This Add-on
 
