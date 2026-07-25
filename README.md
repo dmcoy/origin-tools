@@ -75,25 +75,25 @@ Quick access to Blender's built-in set origin commands via single-click operatio
 These operators provide convenient shortcuts for the first five functions:
 
 #### Origin to Geometry
-Shortcut to **Object > Set Origin > Origin to Geometry**. Sets each object's origin to the geometric center (median) of its mesh data. Useful when importing models with irregular geometry distribution.
+Shortcut to **Object > Set Origin > Origin to Geometry**. 
 
 #### Geometry to Origin  
-Shortcut to **Object > Set Origin > Geometry to Origin**. Moves all mesh geometry so it radiates from the current origin position. Helpful when you've manually placed an origin point and want everything relative to it.
+Shortcut to **Object > Set Origin > Geometry to Origin**. 
 
 #### Origin to 3D Cursor
-Shortcut to **Object > Set Origin > Origin to 3D Cursor**. Sets the origin to the exact location of your 3D cursor. Perfect for placing origins at specific reference points or pivot locations.
+Shortcut to **Object > Set Origin > Origin to 3D Cursor**. 
 
 #### Origin to Mass (Surface)
-Shortcut to **Object > Set Origin > Origin to Center of Mass + Volume (Surface)**. Calculates the center of mass based only on surface area (2D approximation). Faster than volume calculation, suitable for thin objects and sheets.
+Shortcut to **Object > Set Origin > Origin to Center of Mass + Volume (Surface)**.
 
 #### Origin to Mass (Volume)  
-Shortcut to **Object > Set Origin > Origin to Center of Mass + Volume (Volume)**. Computes the true center of mass by analyzing the entire mesh volume. Most accurate for 3D objects but requires more computation time.
+Shortcut to **Object > Set Origin > Origin to Center of Mass + Volume (Volume)**.
 
 These operations apply to all currently selected objects with a single click, providing quick access without navigating Blender's menu system.
 
 ---
 
-### Origin to Selection *(Custom Behavior)*
+### Origin to Selection
 
 **Edit Mode Only**. This operator provides custom functionality that differs from Blender's default behavior. Unlike the other set origin operators, this sets the origin based on selected vertices in edit mode and automatically resets the 3D cursor to world origin after execution.
 
@@ -142,21 +142,6 @@ When distributing modified versions of this add-on:
 - You must retain all copyright notices and license text
 - You must make the source available to recipients at no additional cost
 - Consider releasing your modifications back to the community
-
-## Changelog
-
-### Version 1.0.0 (Current)
-- **Major Release**: Ready for Blender Extensions Platform submission
-- Complete module restructuring for clarity and maintainability
-- Refined mesh alignment algorithm with improved accuracy
-- Fixed numerical issues in rotation transformation calculations
-- Comprehensive documentation and code comments added
-
-### Version 0.4.0
-- Initial stable release
-- Core origin manipulation features
-- Basic axis reorientation functionality
-- Mesh alignment (experimental)
 
 ## Support & Contributing
 
