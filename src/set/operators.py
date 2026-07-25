@@ -104,7 +104,7 @@ class OBJECT_OT_set_origin_to_selection(bpy.types.Operator):
     vertices. The 3D cursor is then snapped back to the world origin.
     """
     bl_idname = "object.set_origin_to_selection"
-    bl_label = "Set origin to selection"
+    bl_label = "Origin to selection"
     bl_description = "Sets the origin to current selection (edit mode only)"
     bl_options = {"REGISTER", "UNDO"}
 
